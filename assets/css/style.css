@@ -1,0 +1,341 @@
+/* Start Header */
+* {
+    box-sizing: border-box;
+}
+
+#beranda {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #071bcf;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 30px;
+}
+/* End Header */
+/* Start Main */
+#content {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    width: 65%;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #071bcf;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+    padding-bottom: 5px;
+}
+
+.input_section > form > button {
+    background-color: #040404;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+    color: #071bcf;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #071bcf;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input_section > form > button:hover{
+    background-color: #071bcf;
+    transition: .5s;
+}
+
+ul .item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #071bcf;
+}
+
+h3 {
+    text-align: center;
+    color: #071bcf;
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.inner p{
+    margin-top: -39px;
+    margin-left: 75px;
+}
+
+.green {
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+    margin: 17px 55px 4px 55px;
+}
+
+.green:hover {
+    background-color: #040404;
+    transition: .5s;
+}
+
+.ungreen {
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    margin: 17px 55px 4px 55px;
+}
+
+.ungreen:hover {
+    background-color: #040404;
+    transition: .5s;
+}
+
+.red {
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.red:hover {
+    background-color: #040404;
+    transition: .5s;
+}
+
+@media screen and (min-width: 768px) {
+    .book {
+        display: flex;
+    }
+    .book_item {
+        justify-content: space-between;
+        width: 50%;
+        padding: 5px;
+    }
+}
+/* Start Main Aside*/
+aside {
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    width: 35%;
+    padding-left: 20px;
+    overflow: auto;
+    text-align: center;
+}
+
+.search_section > h2 {
+    color: #071bcf;
+}
+
+.search_section > form {
+    padding: 12px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.search_section > form > input {
+    padding: 4px 8px 8px 2px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: #040404;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search_section > form > button:hover{
+    background-color: #071bcf;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#profil img {
+    width: 150px;
+}
+
+#profil p {
+    text-align: center;
+}
+
+#profil .profil-contact img{
+    width: 50px;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    #content,
+    aside {
+    width: 100%;
+    padding: 0;
+    }
+}
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    #profil .featured-image {
+        width: 50%;
+    }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    #profil .featured-image {
+        width: 80%;
+    }
+}
+
+/* Hapus Float */
+.clear {
+    clear: both;
+}
+
+main #kontak{
+    background-image: url(../images/background.png);
+    height: 500px;
+    overflow: auto;
+    position: static;
+    justify-content: center;
+}
+.box-contact{
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 30px 20px;
+}
+.box-contact form{
+    display: flex;
+    flex-direction: column;
+}
+.box-contact h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #fff;
+}
+.box-contact input,
+.box-contact textarea,
+.box-contact button{
+    margin-bottom: 5px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+}
+.box-contact button{
+    background-color: #040404;
+    color: white;
+    cursor: pointer;
+}
+.box-contact button:hover{
+    background-color: #071bcf;
+    transition: .5s;
+}
+
+@media screen and (min-width: 600px) {
+    main #kontak{
+        display: flex;
+    }
+
+    .box-contact{
+        padding: 0;
+    }
+
+    .box-contact input,
+    .box-contact textarea,
+    .box-contact button{
+        width: 500px;
+    }
+}
+/* End Main */
+/* memunculkan kembali elementnya */
+.elemen-transisi {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.transisi {
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* Start Footer */
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 17px;
+    position: static;
+    margin: -8px;
+    color: #fff;
+    background-color: #071bcf;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -37.5px;
+}
+/* End Footer */

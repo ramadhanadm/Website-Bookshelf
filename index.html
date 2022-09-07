@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/profil.png">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        <!-- mulai navbar -->
+    <header id="beranda">
+        <nav>
+            <h1 class="head_bar__title">Bookshelf</h1>
+        </nav>
+    </header>
+        <!-- akhir navbar -->
+        <!-- mulai konten -->
+    <main>
+        <div id="content" class="elemen-transisi">
+            <section class="input_section card">
+                <h2>Masukkan Buku Baru</h2>
+                    <form id="inputBook">
+                        <div class="input">
+                            <label for="inputBookTitle">Judul :</label>
+                            <input id="inputBookTitle" type="text" placeholder="Masukkan judul buku..." required>
+                        </div>
+                        <div class="input">
+                            <label for="inputBookAuthor">Penulis :</label>
+                            <input id="inputBookAuthor" type="text" placeholder="Masukkan penulis buku..." required>
+                        </div>
+                        <div class="input">
+                            <label for="inputBookYear">Tahun :</label>
+                            <input id="inputBookYear" type="number" placeholder="Masukkan tahun buku..." required>
+                        </div>
+                        <div class="input_inline">
+                            <label for="inputBookIsComplete">Selesai dibaca</label>
+                            <input id="inputBookIsComplete" type="checkbox">
+                        </div>
+                            <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>, Belum selesai dibaca</span></button>
+                    </form>
+            </section>
+                    <div id="container">
+                        <article class="book_shelf card">
+                            <h2>Belum selesai dibaca</h2>
+                                <ul id="incompleteBookshelfList" class="book_list">
+                                </ul>
+                        </article>
+                        <article class="card"> 
+                            <h2>Selesai dibaca</h2>
+                                <ul id="completeBookshelfList" class="book_list">
+                                </ul>
+                        </article>
+                    </div>
+        </div>
+        <!-- mulai konten aside-->
+        <aside class="elemen-transisi">
+            <article id="informasi" class="card">
+                <section class="search_section">
+                    <h2>Cari Buku (Opsional)</h2>
+                        <form id="searchBook">
+                            <label for="searchBookTitle"><strong>Judul :</strong> </label>
+                            <input id="searchBookTitle" name="searchBookTitle" placeholder="Cari buku ketik disini..." type="text">
+                            <button id="searchSubmit" name="searchSubmit" type="submit">Cari</button>
+                        </form>
+                </section>
+                            <br>
+                            <br>
+            </article>
+            <article id="profil" class="card">
+                <header>
+                    <h2>Hubungi Kami</h2>
+                        <figure>
+                            <img src="assets/images/profil.png" class="featured-image">
+                        </figure>
+                </header>
+                    <section>
+                        <p><strong>Saya <q>Ramadhana Dinata Mustofa</q> siap membantu anda.</strong></p>
+                    </section>
+                    <div class="profil-contact">
+                        <p><strong>E-mail <q>ramadhana_d_m</q>.</strong></p>
+                            <a href="mailto:ramadhanadinatamustofa@gmail.com?Subject=Hallo%20admin" target="_blank"><img src="assets/images/email.png" alt="email dinas perhubungan"></a>
+                        <p><strong>Github <q>ramadhana_d_m</q>.</strong></p>
+                            <a href="https://github.com/ramadhanadm" target="_blank"><img src="assets/images/github.png" alt="github ramadhana"></a>
+                                <br>
+                        <p><strong>Alamat <q>ramadhana_d_m</q>.</strong></p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.164300477797!2d112.3692499912541!3d-8.084720950909267!2m3!1f0!2f0!3f0!3m2!1i1024!
+                                2i768!4f13.1!3m3!1m2!1s0x2e78913cb5272483%3A0x6a6f667a440ee920!2zOMKwMDQnNTYuOCJTIDExMsKwMjInMTAuMSJF!5e0!3m2!1sid!2sid!4v1662125686155!5m2!1sid!2sid" 
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Alamat :</iframe>
+                    </div>
+            </article>
+        </aside>
+        <div class="clear"></div>
+        <div id="kontak" class="card">
+            <div class="box-contact">
+                <h2>Silakan kirim pesan disini.</h2>
+                <form action="" class="elemen-transisi">
+                    <input type="text" placeholder="Nama" required>
+                    <input type="number" placeholder="No. Telp">
+                    <input type="email" placeholder="Email" class="validate">
+                    <textarea name="text" id="" cols="30" rows="10" placeholder="Sampaikan Pesan"></textarea>
+                    <button>Kirim</button>
+                </form>
+            </div>     
+        </div>
+    </main>
+        <!-- akhir konten dan (aside) -->
+        <!-- mulai footer -->
+    <footer>
+        <p>ramadhana_d_m &copy; 2022, Dicoding Academy</p>
+    </footer>
+        <!-- akhir footer -->
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
